@@ -81,11 +81,19 @@ router.get('/:id',async(req,res)=>{
 router.post('/',async(req,res)=>{
     const result = validateCategory(req.body);
     if(!result){return res.status(400).send('joi validation error')};
+    
+    if(req.body.parent){
+        var category = new Category({
+            title:req.body.title,
+            parent:req.body.parent
+        });
+    }
+    else{
+        var category = new Category({
+            title:req.body.title
+        });
+    }
 
-    let category = new Category({
-        title:req.body.title,
-        parent:req.body.parent
-    });
 
     category =await category.save();
     res.status(200).send(category);
