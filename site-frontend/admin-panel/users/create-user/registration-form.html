@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+
+<script type="text/JavaScript" src="registration-form.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+<h1>Registration Form</h1>
+Use tab keys to move from one input field to the next.
+<form action="#" method="post" name="registration_form" id="registration_form" class="form_class">
+<ul>
+<li><label for="name">name:</label></li>
+<li><input type="text" name="name" id="name" size="12" /></li>
+<li><label for="email">email:</label></li>
+<li><input type="email" name="email" id="email" size="12" /></li>
+<li><label for="phone">phone:</label></li>
+<li><input type="text" name="phone" id="phone" size="50" /></li>
+<li><input type="button" name="submit_name" id="btn_name" value="Submit by Name" onclick="registerUser()"/></li>
+</ul>
+</form>
+
+<a href="http://127.0.0.1:5501/create-post.html">click to create your posts!</a>
+
+</body>
+</html>

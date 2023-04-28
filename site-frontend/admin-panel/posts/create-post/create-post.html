@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>create post form</title>
+
+<script type="text/JavaScript" src="create-post.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+<script>
+createOptions()
+</script>
+
+
+
+</head>
+<body>
+<h1>create post form</h1>
+Use tab keys to move from one input field to the next.
+<form action="#" method="post" name="craete_post_form" id="craete_post_form" class="f_class">
+<ul>
+<li><label for="category">category:</label></li>
+<li>
+  <select id="categoryDropdown" multiple>
+
+  </select>
+</li>
+<li><label for="title">title:</label></li>
+<li><input type="text" name="title" id="title" size="12"/></li>
+<li><label for="subtitle">subtitle:</label></li>
+<li><input type="text" name="subtitle" id="subtitle" size="50" /></li>
+<li><label for="content">content:</label></li>
+<li><input type="text" name="content" id="content" size="50" /></li>
+<li><label for="readingtime">readingtime:</label></li>
+<li><input type="text" name="readingtime" id="readingtime" size="50" /></li>
+<li><input type="button" name="submit_name" id="btn_name" value="Submit by Name" onclick="createPost()"/></li>
+</ul>
+</form>
+</body>
+</html>

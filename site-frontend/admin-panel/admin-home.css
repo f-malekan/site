@@ -1,0 +1,30 @@
+table, th, td {
+    border: 1px solid black;
+  }
+
+.split {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: #6559b9;
+  }
+  
+  /* Control the right side */
+.right {
+    right: 0;
+    background-color: rgba(239, 231, 231, 0);
+  }
+
+
+ul {
+    list-style-type: none;
+  }
