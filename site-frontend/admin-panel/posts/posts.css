@@ -1,10 +1,28 @@
 table, th, td {
-    border: 1px solid black;
-  }
+  border: 1px solid black;
+}
 
 #my-table {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+margin: auto;
+width: 50%;
+}
+th{
+background-color: rgb(208, 239, 239);
+color:rgb(15, 81, 139);
+font-size: large;
+}
+
+.material-icons#delete{
+font-size:15px;
+color: rgb(213, 23, 42);
+}
+
+.material-icons#view{
+font-size:15px;
+color: rgb(98, 159, 200);
+}
+
+.material-icons#add{
+font-size:40px;
+color: rgb(19, 173, 42);
 }

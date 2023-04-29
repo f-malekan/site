@@ -96,5 +96,20 @@ router.get('/',async(req,res)=>{
     catch(error){res.send(error.message)}
 })
 
+router.get('/:id',async(req,res)=>{
+    try{
+        const post = await Post.findById(req.params.id);
+        if(!post){return res.status(404).send('post not found')}
+        res.status(200).send(post)
+    }
+    catch(error){res.send(error.message)}
+})
+
+router.delete('/:id',async(req,res)=>{
+    const post=await Post.findByIdAndRemove(req.params.id);
+    if(!post){return res.status(404).send('post not found')}
+    res.status(200).send(post)
+})
+
 
 module.exports = router;
